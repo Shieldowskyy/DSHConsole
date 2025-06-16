@@ -1,7 +1,9 @@
 # DSHConsole
 A simple customizable DebugConsole for Unreal Engine! Made (almost) entirely in Blueprints!
+![image-removebg-preview](https://github.com/user-attachments/assets/5d662856-8055-4734-839b-fcc63878aa2b)
 
 This plugin was made for internal use in DashoGames and also for PiozaLauncher project, for easier debugging and testing.
+
 
 ### WARNING
 I currently do **NOT** provide any support or docs for this plugin.
