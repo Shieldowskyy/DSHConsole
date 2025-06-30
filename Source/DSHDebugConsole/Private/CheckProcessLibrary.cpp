@@ -5,6 +5,7 @@
 #include "Windows/AllowWindowsPlatformTypes.h"
 #include "Windows/WindowsPlatformProcess.h"
 #include <tlhelp32.h>
+#include <iostream>
 #elif PLATFORM_LINUX
 #include "HAL/PlatformProcess.h" // For FPlatformProcess
 #endif
