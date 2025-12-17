@@ -16,6 +16,7 @@ Current version is compatibile and tested with Unreal Engine 5.5.0 on Windows an
 ## Spawning Widget
 The console should be created *as early as possible* in the game's lifecycle. In Blueprints, the best place for this is the **GameInstance**.
 
-You should use the **'Create Widget (W_DebugConsole)'** node right after the **Event Init**, and then store the widget in a **variable**. This allows logging to the console from the very beginning and enables command execution at any point in the future.
+You should use the **'Create Widget (W_DebugConsole)'** node right after the **Event Init**, and then store the widget in a **variable**. **Early spawning is crucial for the logging system to work correctly** - if the widget is created later, any log messages generated before that point will be lost.
+This allows logging to the console from the very beginning and enables command execution at any point in the future.
 
 Additionally, it's important to ensure that whenever the console is shown on the player's screen, the **mouse cursor is enabled** so the player can focus on the console's text input field.
